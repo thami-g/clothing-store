@@ -1,0 +1,31 @@
+.men-section-menu{
+    max-width: 90%;
+    display: flex;
+    margin: 0 auto;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.men-section-menu-casual, .men-section-menu-formal{
+    background-color: red;
+    width: 50%;
+    height: 70vh;
+    position: relative;
+}
+.men-section-menu-formal{
+    background-color: blue;
+}
+
+.men-section-btn{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    background-color: #ffffff;
+    color: black;
+    padding: 1rem;
+    outline: none;
+    border-radius: 2rem;
+    border: 1px solid #ffffff;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+}
