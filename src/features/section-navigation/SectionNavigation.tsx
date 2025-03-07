@@ -6,6 +6,7 @@ function SectionNavigation() {
     <button>jackets</button>
     <button>accessories</button>
     <button>pants</button>
+    <button>jeans</button>
     <button>shorts</button>
   </nav>
   )
