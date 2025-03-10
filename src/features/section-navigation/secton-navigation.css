@@ -1,15 +1,22 @@
 .section-nav{
     display: flex;
     justify-content: center;
-    border: 1px solid red;
     /* padding-top: 2rem; */
     gap: 1rem;
+    /* margin-top: 71.8px; */
+    /* background-color: #3c434d; */
+    margin-bottom: 1.5rem;
 }
 .section-nav button{
-    /* font-size: 1rem; */
-    padding: 0.5rem 0.6rem;
+    font-size: 1rem;
     text-transform: capitalize;
     letter-spacing: 1px;
-    font-weight: bold;
-    font-family: 'Raleway';
+    font-family: 'Roboto';
+    outline: none;
+    border: none;
+    margin-right: 0.7rem;
+    background-color: transparent;
+    color: #fffcfcdc;
+    color: #0a0a0ae7;
+    font-weight: 600;
 }

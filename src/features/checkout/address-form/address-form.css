@@ -1,0 +1,86 @@
+.details{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-container{
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+.address-form {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    max-width: 520px;
+  /* border: 1px solid red; */
+  padding: 1.8rem;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+.address-control{
+  display: flex;
+  gap: 0.6rem;
+  /* border: 1px solid yellow; */
+  /* text-transform: capitalize; */
+  align-items: center;
+}
+
+.address-alignment {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  /* border: 1px solid yellow; */
+}
+.address-input {
+  margin-top: 0.4rem;
+  border: 1px solid #a8a8a8;
+  padding: 0.3rem;
+  border-radius: 4px;
+  margin-bottom: 1.2rem;
+}
+
+.address-input:active {
+  border: 1px solid black;
+}
+
+.address-width{
+    display: block;
+    /* border: 1px solid blue; */
+}
+.address-margin{
+    margin-top: 1rem;
+}
+
+
+.address-info{
+    width: 100%;
+    
+}
+.address-control-city{
+   display: grid;
+   grid-template-columns: 4fr 1fr 1fr;
+}
+
+.address-label{
+    font-weight: 500;
+}
+
+.address-button{
+    display: block;
+    border: 1px solid red;
+    width: 100%;
+    background-color:#01040a;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid #01040a;
+    border-radius: 4px;
+    padding: 0.6rem 0;
+    margin-top: 1.5rem;
+}
+
+.address-mobile{
+    margin-top: 1rem;
+}
