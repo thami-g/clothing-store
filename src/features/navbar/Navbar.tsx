@@ -6,23 +6,42 @@ import { CgProfile } from "react-icons/cg"
 import logo from "../../assets/images/logo.png"
 import "./navbar.css"
 import { Link, NavLink, useLocation } from "react-router"
+import { useEffect, useState } from "react"
 
 function Navbar() {
   const location = useLocation()
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  
+  const isScrolled = scrolled ? "scrolled" : ""
+  const handleScroll = () => {
+    if (window.scrollY > 10) {
+      setScrolled(true)
+    } else {
+      setScrolled(false)
+    }
+  }
+
   const isHomePage = `navbar ${location.pathname === "/" ? "navbar-transparent" : ""}`
   const render = false ? (
-    <NavLink to="#" className="nav-icon">
+    <Link to="#" className="nav-icon">
       <CgProfile size={30} />
-    </NavLink>
+    </Link>
   ) : (
     <div className="login-links">
-      <NavLink to="/login" className="login">
+      <Link to="/login" className="login">
         Login
-      </NavLink>
+      </Link>
       |
-      <NavLink to="/signup" className="login">
+      <Link to="/signup" className="login">
         Signup
-      </NavLink>
+      </Link>
     </div>
   )
 
@@ -36,13 +55,13 @@ function Navbar() {
   }
 
   return (
-    <nav className={`${isHomePage}`}>
-      <NavLink to="/" className="logo">
+    <nav className={`${isHomePage} ${isScrolled}`}>
+      <Link to="/" className="logo">
         <img src={logo} alt="logo" className="logo-img" />
-      </NavLink>
+      </Link>
 
       <div className="links">
-        <NavLink to="/new">New & Featured</NavLink>
+        <a href="#new">New & Featured</a>
         <NavLink to="/men">Men</NavLink>
         <NavLink to="/women">Women</NavLink>
         <NavLink to="/kids">Kids</NavLink>

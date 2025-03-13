@@ -6,7 +6,7 @@ import banner3 from "../../assets/images/banner-3.jpg"
 import "./new-arrivals.css"
 function NewArrivals() {
   return (
-    <section className="new-arrivals">
+    <section className="new-arrivals" id="new">
       <h2 className="title">new products</h2>
       <SwiperSlider />
 
@@ -22,7 +22,7 @@ function NewArrivals() {
         </div>
         <div className="left-section">
           <img src={banner2} alt="" className="banner-img" />
-        <p className="sale-title"> Amazing Deals – Up to 30% Off!</p>
+        <p className="sale-title"> Amazing Deals – Up to 30% Off! on jackets</p>
         </div>
       </div>
     </section>

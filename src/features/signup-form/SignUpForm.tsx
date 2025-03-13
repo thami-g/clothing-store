@@ -14,7 +14,17 @@ function SignUpForm() {
       />
     </label>
   )
-
+  const renderNameField = location.pathname === "/signup" && (
+    <label htmlFor="name">
+      <input
+        type="text"
+        name="name"
+        id="name"
+        className="form-control"
+        placeholder="Name"
+      />
+    </label>
+  )
   const renderText = location.pathname === "/login" ? (
     <p className="signup-footer-text">
       Need an account?{" "}
@@ -35,6 +45,7 @@ function SignUpForm() {
     <div className="form-section">
       <form className="signup-form">
         <SignUpHeader />
+        {renderNameField}
         <label htmlFor="email">
           <input
             type="email"
